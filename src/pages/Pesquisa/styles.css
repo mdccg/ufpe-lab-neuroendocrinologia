@@ -1,0 +1,75 @@
+#pesquisa > #cabecalho {
+  padding-left:  16px;
+  padding-right: 16px;
+
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  
+  min-height: 384px;
+  
+  background-color: white;
+}
+
+#pesquisa > #cabecalho > h3 {
+  font-family: 'Work Sans';
+  color: var(--dracula-orchid);
+  font-size: 200%;
+
+  text-align: center;
+
+  margin-bottom: 64px;
+}
+
+#pesquisa > #cabecalho > p {
+  font-family: 'Work Sans';
+  color: var(--dracula-orchid);
+  font-size: 125%;
+
+  text-align: center;
+}
+
+#pesquisa > #corpo {
+  background-color: var(--branco);
+  padding: 64px;
+  display: flex;
+}
+
+#pesquisa > #corpo > #textos {
+  padding-right: 64px;
+  flex: 50%;
+}
+
+#pesquisa > #corpo > #textos > h4 {
+  font-family: 'Work Sans';
+  color: var(--dracula-orchid);
+  font-size: 150%;
+
+  margin-bottom: 24px;
+}
+
+#pesquisa > #corpo > #textos > p {
+  font-family: 'Roboto';
+  color: var(--dracula-orchid);
+
+  text-align: justify;
+  text-indent: 32px;
+  line-height: 1.5;
+
+  margin-bottom: 8px;
+}
+
+#pesquisa > #corpo > #imagem > img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 950px) {
+  #pesquisa > #corpo {
+    flex-direction: column;
+    padding: 32px;
+  }
+
+  #pesquisa > #corpo > #textos {
+    padding-right: 0;
+  }
+}

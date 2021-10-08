@@ -1,0 +1,91 @@
+:root {
+  --largura-da-logotipo: 595px;
+  --altura-da-togotipo: 216px;
+}
+
+header {
+  flex-direction: column;
+  display: flex;
+  
+  position: fixed;
+  width: 100%;
+}
+
+header > #cabecalho {
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  padding-left:  64px;
+  padding-right: 64px;
+
+  box-sizing: border-box;
+  
+  background-color: white;
+
+  align-items: center;
+  display: flex;
+}
+
+header > #cabecalho > img {
+  width: calc(var(--largura-da-logotipo) / 1.5);
+  height: calc(var(--altura-da-togotipo) / 1.5);
+}
+
+header > #cabecalho > hgroup {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+
+  line-height: 1.5;
+}
+
+header > #cabecalho > hgroup > h1 {
+  font-family: 'Work Sans';
+  color: var(--dracula-orchid);
+  font-size: 128%;
+
+  margin-bottom: 24px;
+}
+
+header > #cabecalho > hgroup > h2 {
+  font-family: 'Roboto';
+  color: var(--american-river);
+
+  margin-bottom: 8px;
+}
+
+header > #cabecalho > hgroup > h2:last-child {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 658px) {
+  header > #cabecalho {
+    padding-left:  16px;
+    padding-right: 16px;
+
+    flex-direction: column;
+  }
+
+  /*header > #cabecalho > img {
+    object-fit: contain;
+    width: 100%;
+  }*/
+
+  header > #cabecalho > img {
+    display: none;
+  }
+
+  header > #cabecalho > hgroup > h1 {
+    text-align: center;
+    font-size: 100%;
+
+    margin-bottom: 8px;
+  }
+
+  header > #cabecalho > hgroup > h2 {
+    text-align: right;
+    font-size: 80%;
+
+    margin-bottom: 4px;
+  }
+}

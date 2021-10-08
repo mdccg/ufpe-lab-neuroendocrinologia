@@ -1,0 +1,42 @@
+nav {
+  background-color: var(--cinza);
+}
+
+nav > ul {
+  padding-left:  64px;
+  padding-right: 64px;
+  
+  overflow-x: auto;
+
+  display: flex;
+}
+
+nav > ul > li {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  
+  min-width: 128px;
+  min-height: 32px;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+
+  font-family: 'Work Sans';
+  color: white;
+  font-size: 84%;
+}
+
+nav ::-webkit-scrollbar {
+  height: 8px;
+}
+
+nav ::-webkit-scrollbar-track {
+  background-color: var(--cinza);
+}
+
+nav ::-webkit-scrollbar-thumb {
+  background-color: var(--soothing-breeze);
+  border-radius: 8px;
+}
